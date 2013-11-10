@@ -1,0 +1,99 @@
+51. #### ?[Design for Facebook authentication in an iOS app that also accesses a secured web service](http://stackoverflow.com/questions/4623974/design-for-facebook-authentication-in-an-ios-app-that-also-accesses-a-secured-we)
+
+	第三方授权的问题。
+
+52. [Is there a barcode recognition framework for iOS?](http://stackoverflow.com/questions/838724/is-there-a-barcode-recognition-framework-for-ios)	
+	条形码识别框架。推荐[ZXing](https://code.google.com/p/zxing/)、[ZXingObjC](https://github.com/TheLevelUp/ZXingObjC)和[ZBar](http://zbar.sourceforge.net/)。
+
+53. [How to Sync iPhone Core Data with web server, and then push to other devices?](http://stackoverflow.com/questions/5035132/how-to-sync-iphone-core-data-with-web-server-and-then-push-to-other-devices)	
+	Core Data同步的讨论。就我目前所知，Core Data同步很难做到完美。
+
+54. [Getting current device language in iOS?](http://stackoverflow.com/questions/3910244/getting-current-device-language-in-ios)	
+	获得当前设备语言。当前所在区域和当前选中语言不一定是一样的，比如你在中国，但你语言选中了英语。获取当前设备语言：`NSString * language = [[NSLocale preferredLanguages] objectAtIndex:0];`另外就是你设备选中的语言跟当前所在App的本地化语音也不一定一样，你语言选中了中文简体，但App并没有做中文简体的适配，那么`languages`返回的并不是App UI的语言。App 所使用的语言：`NSString *language = [[[NSBundle mainBundle] preferredLocalizations] objectAtIndex:0];`更多NSLocal的一些方法，请[戳这里](http://my.oschina.net/hmj/blog/126355)。关于语言的对应关系，[List of ISO 639-1 codes](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)。
+	
+55. [Set the maximum character length of a UITextField](http://stackoverflow.com/questions/433337/set-the-maximum-character-length-of-a-uitextfield)
+
+	设置UITextField最大字符串长度。UITextField并没有这个属性，是通过UITextField的delegate方法`- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string `来完成。
+
+56. [How to detect iPhone 5 (widescreen devices)?](http://stackoverflow.com/questions/12446990/how-to-detect-iphone-5-widescreen-devices)
+
+	如何知道所用设备是iPhone 5。两个条件：1）model是iPhone；2）屏幕height等于568。评论中吐槽了标注答案的浮点数比较，查阅评论后，还有关于浮点数比较请[戳这里](http://stackoverflow.com/questions/10334688/how-dangerous-is-it-to-compare-floating-point-values)。
+
+57. [Why are Objective-C delegates usually given the property assign instead of retain?](http://stackoverflow.com/questions/918698/why-are-objective-c-delegates-usually-given-the-property-assign-instead-of-retai)
+
+	Objective-C 中`delegate`的属性都是`assign`而不是`retain`。这是为了防止循环引用问题。
+	
+	在ARC中大都会用`weak`来替代`assign`(等同于`unsafe_unretained`，对象被销毁后成为野指针)，因为如果对象所指向的内存已经销毁了，那么所有指向这个对象的`weak`指针会自动置为`nil`。这样就不用去在`dealloc`中，设置`delegate`等于`nil`。这也是为什么会有人建议总要在`dealloc`中设置`delegate`为`nil`(因为会有人使用了`assign`或者`unsafe_unretained`)。关于[手把手教你ARC——iOS/Mac开发ARC入门和使用](http://onevcat.com/2012/06/arc-hand-by-hand/)、[ARC 学习](http://www.cnblogs.com/scorpiozj/archive/2011/10/24/2222609.html)。
+
+58. [When to use NSInteger vs int?](http://stackoverflow.com/questions/4445173/when-to-use-nsinteger-vs-int)
+
+	什么时候使用`NSInteger`和`int`。`NSInteger`跟应用位数一样的。比如32位的应用，`NSInteger`是32位整数；64位应用，`NSInteger`是64位整数。Apple的文档，请[戳这里](https://developer.apple.com/library/mac/documentation/cocoa/reference/foundation/Miscellaneous/Foundation_DataTypes/Reference/reference.html)。对`NSInteger`的代码，你可以参看问题本身。当你希望能够使用到或者靠近最大的整数(也不想考虑处理器的架构)或者没什么特殊要求，就可以考虑使用`NSInteger`。
+
+59. [How to navigate through textfields (Next / Done Buttons)](http://stackoverflow.com/questions/1347779/how-to-navigate-through-textfields-next-done-buttons)
+
+	通过Next/Done按钮导航`textfiled`。意思就是如何通过`keyboard`上的Next/Done按钮来控制`textfield`。主要是利用`delegte`方法：`-(BOOL)textFieldShouldReturn:(UITextField*)textField`。
+
+60. [How do I draw a shadow under a UIView?](http://stackoverflow.com/questions/805872/how-do-i-draw-a-shadow-under-a-uiview)
+
+	绘制UIView的阴影。一般有两类，一类是通过`drawrect`来绘制，另外一类是通过`layer`来设置。
+
+61. #### ?[Enabling auto layout in iOS 6 while remaining backwards compatible with iOS 5](http://stackoverflow.com/questions/12411980/enabling-auto-layout-in-ios-6-while-remaining-backwards-compatible-with-ios-5)
+
+	Autolayout兼容性问题。
+
+62. [How do I avoid capturing self in blocks when implementing an API?](http://stackoverflow.com/questions/7853915/how-do-i-avoid-capturing-self-in-blocks-when-implementing-an-api)
+
+	如何避免在`block`中`capture self`。在MRC和ARC中，`__block`修饰语的效果是不一样的。MRC中，`__block`是表示可修改，并不retain，跟`__weak`一样。 ARC中，`__block`是会retain的。所以在MRC中使用`__block`，ARC中使用`__weak`,即可避免`capture self`。Mike Ash关于ARC，请[戳这里](http://www.mikeash.com/pyblog/friday-qa-2011-09-30-automatic-reference-counting.html)。LLVM上关于[Objective-C Automatic Reference Counting (ARC)](http://clang.llvm.org/docs/AutomaticReferenceCounting.html)。类似的问题有：[How to assign a variable inside a block to a variable outside a block?](http://stackoverflow.com/questions/7962721/how-to-assign-a-variable-inside-a-block-to-a-variable-outside-a-block)
+
+63. [iPhone UIView Animation Best Practice](http://stackoverflow.com/questions/630265/iphone-uiview-animation-best-practice)
+
+	iPhone上UIView Animation最佳实践。一般两类，一类是`UIView transitionWithView`，另外一类是`UIView animateWithDuration`。4.0之后，不鼓励使用`UIView beginAnimations`了。
+
+64. #### ?[iPhone: How to load a View using a nib file created with Interface Builder](http://stackoverflow.com/questions/863321/iphone-how-to-load-a-view-using-a-nib-file-created-with-interface-builder)
+
+		
+65. [Why does Apple recommend to use dispatch_once for implementing the singleton pattern under ARC?](http://stackoverflow.com/questions/9119042/why-does-apple-recommend-to-use-dispatch-once-for-implementing-the-singleton-pat)
+
+	为什么Apple推荐在ARC下，用`dispatch_once`来实现单例模式。三个原因：1. 相对于所有其他GCD方法，他是绝对同步；2. 相对于`@synchronized`，他更快；3. 语义更清晰。
+
+66. [Having a UITextField in a UITableViewCell](http://stackoverflow.com/questions/409259/having-a-uitextfield-in-a-uitableviewcell)
+
+	在`UITableViewCell`上增加`UITextField`。
+
+67. [Can I use Objective-C blocks as properties?](http://stackoverflow.com/questions/3935574/can-i-use-objective-c-blocks-as-properties)
+
+	将`block`当成`Property`使用。基本写法。
+
+68. [Xcode suddenly stopped running project on hardware: “Could not launch xxx.app: .. No such file..”](http://stackoverflow.com/questions/11456312/xcode-suddenly-stopped-running-project-on-hardware-could-not-launch-xxx-app?page=1&tab=active#tab-top)
+
+	Xcode在真机上跑的时候突然停止了，报错：`Could not launch xxx.app: .. No such file..`。回答的解决方法集中在删除`~/Library/Developer/Xcode/DerivedData/`中的相关文件，当然还有其他原因引起的。
+
+69. [Xcode 4.2 debug doesn't symbolicate stack call](http://stackoverflow.com/questions/7841610/xcode-4-2-debug-doesnt-symbolicate-stack-call)
+
+	不能符号化stack call。如果你接触过[iOS崩溃日志](https://developer.apple.com/library/ios/technotes/tn2151/_index.html)处理的话，会了解到`.dYSM`文件，symbolicate也就会用到。回答中简单介绍了通过[`NSSetUncaughtExceptionHandler`](https://developer.apple.com/library/mac/documentation/cocoa/Reference/Foundation/Miscellaneous/Foundation/Miscellaneous/Foundation/Miscellaneous/Foundation/Miscellaneous/Foundation_Functions/Reference/reference.html#//apple_ref/c/func/NSSetUncaughtExceptionHandler)来在崩溃的时候，打印一些有用信息。评论中介绍了一个很好的学习资料[Handling unhandled exceptions and signals](http://www.cocoawithlove.com/2010/05/handling-unhandled-exceptions-and.html)，分析了崩溃的来由、分类(分为Objecitve-C Exception和signal)以及如何控制。崩溃(更准确地说是异常终止)是因为没有控制住的[signal](http://m.oschina.net/blog/125825)被发送到你的application的结果。没有控制住的signal来自内核、其他进程和应用本身，分别可以是EXC_BAD_ACCESS(常用NSZombie来排错)、SIGABRT这类和对象调用未实现的selector等。
+	
+70. [Archives not showing up in Organizer for XCode 4](http://stackoverflow.com/questions/5265772/archives-not-showing-up-in-organizer-for-xcode-4)
+
+	在Xcode 4中，Archive没在Organizer显示。步骤型操作。
+
+71. [NSOperation vs Grand Central Dispatch](http://stackoverflow.com/questions/10373331/nsoperation-vs-grand-central-dispatch)
+
+	NSOperation和GCD分别什么时候使用合适。因为NSOpertaion是对GCD的封装，拥有依赖等更多的功能。所以，1). 需要更多封装后的API和不考虑很优异的性能，使用NSOperation；2).需要很优异性能和灵活性，则可以使用GCD。类似的还有：[Why should I choose GCD over NSOperation and blocks for high-level applications?](http://stackoverflow.com/questions/7651551/why-should-i-choose-gcd-over-nsoperation-and-blocks-for-high-level-applications)和[When to use NSOperation vs. GCD](http://eschatologist.net/blog/?p=232)。
+
+72. [Is it possible to register a http+domain-based URL Scheme for iPhone apps, like YouTube and Maps?](http://stackoverflow.com/questions/1108693/is-it-possible-to-register-a-httpdomain-based-url-scheme-for-iphone-apps-like)
+
+	为App注册URL Scheme，用浏览器来打开App。通过设置`window.location`和`timeout`函数来完成。`timeout`来保证超时跳转到应用商店下载App。类似的问题，也有[自定义URL Schema](http://www.cocoachina.com/newbie/tutorial/2012/0529/4302.html)。
+
+73. [iphone Core Data Unresolved error while saving](http://stackoverflow.com/questions/1283960/iphone-core-data-unresolved-error-while-saving)
+
+	当保存的时候，出现iPhone Core Data 未能解决的错误。这类错误还是参考错误码、域的解释来解决，[Core Data Constants Reference](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/CoreDataFramework/Miscellaneous/CoreData_Constants/Reference/reference.html)。
+
+74. []()
+
+
+
+
+	
+
+
+
