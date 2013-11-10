@@ -40,7 +40,7 @@ FSQuestion
 
 #### 目录管理
 
-比如说当前只有iOS开发的资料，所以最外面的文件夹只有一个iOS Dev（如果你是另外方向的，你可以添加新的文件夹），还有README.markdown文件。下面以iOS Dev举例，iOS Dev下分为另块内容，一块是专门放置问题解读的Questions文件夹(这类似于原材料库)，另外一块是放置专题内容的Topics文件夹(总结某块内容等)。
+比如说当前只有iOS开发的资料，所以最外面的文件夹只有一个iOS Dev（如果你是另外方向的，你可以添加新的文件夹），还有README.markdown文件。下面以iOS Dev举例，iOS Dev下分为两块内容，一块是专门放置问题解读的Questions文件夹(这类似于原材料库)，另外一块是放置专题内容的Topics文件夹(总结某块内容等)。
 
 在Questions文件夹下，attending.markdown文件表示正在准备的内容，Tags_xx表示某个tag（stackoverflow的tag）下的内容，这个文件夹下以xxxx-xxxx.markdown命名，表示xxxx-xxxxx的问题。
 
