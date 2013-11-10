@@ -1,8 +1,6 @@
 >
 # FSQuestion
 
-==========
-
 ## 项目内容
 
 整理StackOverFlow，整理出精华。
