@@ -79,4 +79,6 @@ __精读__
 
 如果你对Markdown还没有了解，可以参看[daringfireball](http://daringfireball.net/projects/markdown/)上的相关内容。Markdown的中文语法说明，请[戳这里](http://wowubuntu.com/markdown/)。你可以使用支持Markdown语法的[Mou](http://mouapp.com/)进行文字编辑。
 
+## License
 
+FAQuestion is available under the MIT license. See the LICENSE file for more info.
