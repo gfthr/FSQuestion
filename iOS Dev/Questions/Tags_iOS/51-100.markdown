@@ -90,7 +90,7 @@
 
 74. [UIImage: Resize, then Crop](http://stackoverflow.com/questions/603907/uiimage-resize-then-crop)
 
-	 UIImage:Resize, then Crop。计算好后缩放后的大小和位置，然后应用drawInRect:(在指定rect，填充满)。
+	 UIImage:Resize, then Crop。计算好缩放后的大小和位置，然后应用drawInRect:(在指定rect，填充满)。
 
 
 
