@@ -88,7 +88,11 @@
 
 	当保存的时候，出现iPhone Core Data 未能解决的错误。这类错误还是参考错误码、域的解释来解决，[Core Data Constants Reference](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/CoreDataFramework/Miscellaneous/CoreData_Constants/Reference/reference.html)。
 
-74. []()
+74. [UIImage: Resize, then Crop](http://stackoverflow.com/questions/603907/uiimage-resize-then-crop)
+
+	 UIImage:Resize, then Crop。计算好后缩放后的大小和位置，然后应用drawInRect:(在指定rect，填充满)。
+
+
 
 
 
