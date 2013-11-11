@@ -92,6 +92,10 @@
 
 	 UIImage:Resize, then Crop。计算好缩放后的大小和位置，然后应用drawInRect:(在指定rect，填充满)。
 
+75. [How to print Boolean flag in NSLog?](http://stackoverflow.com/questions/6358349/how-to-print-boolean-flag-in-nslog)
+
+	如何打印Boolean标识。`BOOL flag = YES;NSLog(flag ? @"Yes" : @"No");`
+
 
 
 
