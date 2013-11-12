@@ -104,6 +104,10 @@
 
 	当点击textfield外的区域，`dissmiss keyboard`。在`superview`上加tap手势，触发`[aTextField resignFirstResponder];`。
 
+78. [How can I use NSError in my iPhone App?](http://stackoverflow.com/questions/4654653/how-can-i-use-nserror-in-my-iphone-app)
+
+	如何使用NSError。基本用法。@mattt关于[NSError](http://nshipster.com/nserror/)。
+
 
 	
 
