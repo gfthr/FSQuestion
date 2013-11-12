@@ -100,7 +100,9 @@
 
 	`dequeueReusableCellWithIdentifier: forIndexPath:` assertion failure。需要注意，这方法和`dequeueReusableCellWithIdentifier`是不一样的。前个方法需要用`registerNib:forCellReuseIdentifier:`或者`registerClass: forCellReuseIdentifier:`注册一个类或者nib文件。
 
+77. [iphone, dismiss keyboard when touching outside of textfield](http://stackoverflow.com/questions/5306240/iphone-dismiss-keyboard-when-touching-outside-of-textfield)
 
+	当点击textfield外的区域，`dissmiss keyboard`。在`superview`上加tap手势，触发`[aTextField resignFirstResponder];`。
 
 
 	
