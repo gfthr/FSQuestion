@@ -108,6 +108,9 @@
 
 	如何使用NSError。基本用法。@mattt关于[NSError](http://nshipster.com/nserror/)。
 
+79. [Set UIButton title label font size programmatically](http://stackoverflow.com/questions/3352165/uibutton-settext-programatically)
+
+	设置UIButtn title label的font size。原来的`[button setFont:...]`已经被deprecated。现在用`[button.titleLabel setFont:...]`。类似的有[UIButton setText programatically](http://stackoverflow.com/questions/3352165/uibutton-settext-programatically)。
 
 	
 
