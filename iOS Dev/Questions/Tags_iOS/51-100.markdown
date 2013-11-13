@@ -13,7 +13,7 @@
 	
 55. [Set the maximum character length of a UITextField](http://stackoverflow.com/questions/433337/set-the-maximum-character-length-of-a-uitextfield)
 
-	设置UITextField最大字符串长度。UITextField并没有这个属性，是通过UITextField的delegate方法`- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string `来完成。
+	设置UITextField最大字符串长度。UITextField并没有这个属性，是通过UITextField的delegate方法`- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string `来完成。类似的还有[UITextField text change event](http://stackoverflow.com/questions/7010547/uitextfield-text-change-event)，有两类方法，一个是设置事件监听器，另外一个是直接采用UITextFieldDelegate的方法。
 
 56. [How to detect iPhone 5 (widescreen devices)?](http://stackoverflow.com/questions/12446990/how-to-detect-iphone-5-widescreen-devices)
 
