@@ -112,7 +112,13 @@
 
 	设置UIButtn title label的font size。原来的`[button setFont:...]`已经被deprecated。现在用`[button.titleLabel setFont:...]`。类似的有[UIButton setText programatically](http://stackoverflow.com/questions/3352165/uibutton-settext-programatically)。
 
+80. [How can I produce an effect similar to the iOS 7 blur view?](http://stackoverflow.com/questions/17055740/how-can-i-produce-an-effect-similar-to-the-ios-7-blur-view)
 	
+	类似于iOS 7模糊view的效果。你可以用[blur关键词](https://github.com/search?l=Objective-C&q=blur&ref=cmdform&type=Repositories)来搜索Github。
+
+
+
+
 
 
 
