@@ -46,7 +46,7 @@
 
 12. [Check iPhone iOS Version](http://stackoverflow.com/questions/3339722/check-iphone-ios-version)
 
-	检查iOS版本。用[[UIDevice currentDevice] systemVersion]获得系统版本，再通过另外一个函数判断大小。基本上都会将这个函数定义成宏，你也可以参看这个[TBMacros](https://github.com/twobitlabs/TBMacros)。类似的还有检查设备型号，[Determine device (iPhone, iPod Touch) with iPhone SDK](http://stackoverflow.com/questions/448162/determine-device-iphone-ipod-touch-with-iphone-sdk)，采用NSString *deviceType = [UIDevice currentDevice].model;，并有详细的gist。
+	检查iOS版本。用[[UIDevice currentDevice] systemVersion]获得系统版本，再通过另外一个函数判断大小。基本上都会将这个函数定义成宏，你也可以参看这个[TBMacros](https://github.com/twobitlabs/TBMacros)。相同的还有[How can we programmatically detect which iOS version is device running on?](http://stackoverflow.com/questions/7848766/how-can-we-programmatically-detect-which-ios-version-is-device-running-on)。类似的还有检查设备型号，[Determine device (iPhone, iPod Touch) with iPhone SDK](http://stackoverflow.com/questions/448162/determine-device-iphone-ipod-touch-with-iphone-sdk)，采用NSString *deviceType = [UIDevice currentDevice].model;，并有详细的gist。
 
 13. [“Warning: iPhone apps should include an armv6 architecture” even with build config set](http://stackoverflow.com/questions/4198676/warning-iphone-apps-should-include-an-armv6-architecture-even-with-build-conf)
 
