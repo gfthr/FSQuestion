@@ -120,7 +120,9 @@
 
 	前置声明(forward declarion)。这里只要`#import <QuartzCore/QuartzCore.h>`。
 
+82. [Custom dealloc using ARC (Objective-C)](http://stackoverflow.com/questions/7292119/custom-dealloc-using-arc-objective-c)
 
+	ARC情况下，`dealloc`怎么写。基础问题。`delloc`里面不用写`[super dealloc]`。
 
 
 
