@@ -116,7 +116,9 @@
 	
 	类似于iOS 7模糊view的效果。你可以用[blur关键词](https://github.com/search?l=Objective-C&q=blur&ref=cmdform&type=Repositories)来搜索Github。
 
+81. [What does “Receiver type 'CALayer' for instance message is a forward declaration” mean here?](http://stackoverflow.com/questions/7813379/what-does-receiver-type-calayer-for-instance-message-is-a-forward-declaration)
 
+	前置声明(forward declarion)。这里只要`#import <QuartzCore/QuartzCore.h>`。
 
 
 
