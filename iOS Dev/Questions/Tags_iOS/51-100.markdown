@@ -124,5 +124,8 @@
 
 	ARC情况下，`dealloc`怎么写。基础问题。`delloc`里面不用写`[super dealloc]`。
 
+83. [How do you print out a stack trace to the console/log in Cocoa?](http://stackoverflow.com/questions/220159/how-do-you-print-out-a-stack-trace-to-the-console-log-in-cocoa)
+
+	在Cocoa中，如何在console/log打印`stack trace`。
 
 
