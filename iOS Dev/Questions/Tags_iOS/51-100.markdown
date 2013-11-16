@@ -128,4 +128,8 @@
 
 	在Cocoa中，如何在console/log打印`stack trace`。
 
+84. [Setting custom UITableViewCells height](http://stackoverflow.com/questions/494562/setting-custom-uitableviewcells-height)
 
+	设置UITableViewCell的height。`heightForRowAtIndexPath`
+
+85. 
