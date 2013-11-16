@@ -1,0 +1,224 @@
+
+1. [Vertically align text within a UILabel](http://stackoverflow.com/questions/1054558/vertically-align-text-within-a-uilabel)
+ 
+	UILabel中根据text调整size。如sizetofit之后，并不等于原来label的size了(包括width)，根据业务需要，你需要重新设置label的size。
+
+2. [How to check for an active Internet Connection on iPhone SDK?](http://stackoverflow.com/questions/1083701/how-to-check-for-an-active-internet-connection-on-iphone-sdk)
+
+	检查网络。描述了很详细的Reachability使用。如检查当前网络状态等。
+
+3. [Can I embed a custom font in an iPhone application?](http://stackoverflow.com/questions/360751/can-i-embed-a-custom-font-in-an-iphone-application)
+
+	如何嵌入自定义的字体。回答中的重要链接已经失效。你还可以参看[在iphone中使用自定义字体](http://blog.csdn.net/sjzsp/article/details/6338282)。对于字体加密可以参看[资源保护，评论里也讲述了字体加密](http://aptogo.co.uk/2010/07/protecting-resources/) ，根据这个我也做了字体加密的实现。
+
+4. [performSelector may cause a leak because its selector is unknown](http://stackoverflow.com/questions/7017281/performselector-may-cause-a-leak-because-its-selector-is-unknown)
+
+	回答挺有质量，不仅有原理解释，也有多种解决方法及利弊，还包括Method Signature Mismatches这些。建议前几个回答和评论都看。（#pragma clang diagnostic）
+
+5. [How to make a UITextField move up when keyboard is present](http://stackoverflow.com/questions/1126726/how-to-make-a-uitextfield-move-up-when-keyboard-is-present)
+
+	给UIView做个动画来完成，也提到keyboard的notification会带有keyboard的frame信息。而不是自己定义一个constant。
+
+6. [How can I disable the UITableView selection highlighting?](http://stackoverflow.com/questions/190908/how-can-i-disable-the-uitableview-selection-highlighting)
+
+	取消cell选中高亮。设置 cell.selectionStyle = UITableViewCellSelectionStyleNone即可。
+
+7. [Codesign error: Provisioning profile cannot be found after deleting expired profile](http://stackoverflow.com/questions/1760518/codesign-error-provisioning-profile-cannot-be-found-after-deleting-expired-prof)
+
+	在Xcode4中删除pbxproj中关于provision的code，并重新打开项目。或者Xcode5中重新选择Provisioning profile。
+
+8. [How can I develop for iPhone using a Windows development machine?](http://stackoverflow.com/questions/22358/how-can-i-develop-for-iphone-using-a-windows-development-machine)
+
+	没玩过，没啥想法。写得大多是装虚拟机这类套路。或者open tool chain这类。不过对于专业开发来说，还是建议买了Mac。类似的还有[Starting iPhone app development in Linux?](http://stackoverflow.com/questions/276907/starting-iphone-app-development-in-linux)、
+[iPhone App Development on Ubuntu [duplicate]](http://stackoverflow.com/questions/1056426/iphone-app-development-on-ubuntu)、[iPhone development on Windows [duplicate]](http://stackoverflow.com/questions/113547/iphone-development-on-windows)。
+
+9. [How do you beta test an iPhone app?](http://stackoverflow.com/questions/40154/how-do-you-beta-test-an-iphone-app)
+
+	如何生成一个给测试人员用的beta版本。官方的版本是Ad-Hoc distribution profile。非官方的版本是创建一个自签名证书给越狱的机器用。
+
+10. [How to change the name of an iPhone app?](http://stackoverflow.com/questions/238980/how-to-change-the-name-of-an-iphone-app)
+
+	修改app名字。当然你还可以[Localize iPhone Application Name](http://useyourloaf.com/blog/2010/12/15/localize-iphone-application-name.html)。关于CFBundleName 和CFBundleDisplayName的区别，[参看这里](http://stackoverflow.com/questions/3465792/whats-the-difference-between-bundle-display-name-and-bundle-name-in-cocoa-a)。我的理解是一个是工程名，一个是icon下面的名字。
+
+11. [How to develop or migrate apps for iPhone 5 screen resolution?](http://stackoverflow.com/questions/12395200/how-to-develop-or-migrate-apps-for-iphone-5-screen-resolution)
+
+	iPhone5适配。先通过UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone等判断是iPhone还是iPad，再通过[UIScreen mainScreen]来获得屏幕的size.height，最后做适配。类似的还有[iOS 6 apps - how to deal with iPhone 5 screen size? [duplicate]](http://stackoverflow.com/questions/12396545/ios-6-apps-how-to-deal-with-iphone-5-screen-size)。
+
+12. [Check iPhone iOS Version](http://stackoverflow.com/questions/3339722/check-iphone-ios-version)
+
+	检查iOS版本。用[[UIDevice currentDevice] systemVersion]获得系统版本，再通过另外一个函数判断大小。基本上都会将这个函数定义成宏，你也可以参看这个[TBMacros](https://github.com/twobitlabs/TBMacros)。相同的还有[How can we programmatically detect which iOS version is device running on?](http://stackoverflow.com/questions/7848766/how-can-we-programmatically-detect-which-ios-version-is-device-running-on)。类似的还有检查设备型号，[Determine device (iPhone, iPod Touch) with iPhone SDK](http://stackoverflow.com/questions/448162/determine-device-iphone-ipod-touch-with-iphone-sdk)，采用NSString *deviceType = [UIDevice currentDevice].model;，并有详细的gist。
+
+13. [“Warning: iPhone apps should include an armv6 architecture” even with build config set](http://stackoverflow.com/questions/4198676/warning-iphone-apps-should-include-an-armv6-architecture-even-with-build-conf)
+
+	App支持ARMv6。在Building Settings进行配置。你也可参看[iOS Device Specifications Grid](http://blakespot.com/ios_device_specifications_grid.html)进行配置。类似的还有[File is universal (three slices), but it does not contain a(n) ARMv7-s slice error for static libraries on iOS, anyway to bypass?](http://stackoverflow.com/questions/12402092/file-is-universal-three-slices-but-it-does-not-contain-an-armv7-s-slice-err)。还有设备架构导致的问题，如[XCode 4 says “finished running <my app>” on the targeted device — Nothing happens](http://stackoverflow.com/questions/5292286/xcode-4-says-finished-running-my-app-on-the-targeted-device-nothing-happe)。
+
+14. [How do I create delegates in Objective-C?](http://stackoverflow.com/questions/626898/how-do-i-create-delegates-in-objective-c)
+	
+	在Objective-C创建delegates。里面还介绍了一个速度优化：先定义一个struct(包含了每个delegate方法能否响应的变量)，在setdelegate的时候通过respondsToSelector完成变量的赋值。
+
+15. [In Objective-C, how do I test the object type?
+](http://stackoverflow.com/questions/1144629/in-objective-c-how-do-i-test-the-object-type)
+	
+	测试对象类型。[myObject isKindOfClass:[SomeClass class]];
+
+16. [Fast and Lean PDF Viewer for iPhone / iPad / iOs - tips and hints?](http://stackoverflow.com/questions/3889634/fast-and-lean-pdf-viewer-for-iphone-ipad-ios-tips-and-hints)
+
+	iOS上关于PDF方面的资料，非常不错。
+
+17. [UIDevice uniqueIdentifier Deprecated - What To Do Now?](http://stackoverflow.com/questions/6993325/uidevice-uniqueidentifier-deprecated-what-to-do-now)
+	
+	UDID deprecated问题。OpenUDID,[点这里](https://github.com/ylechelle/OpenUDID)。
+
+18. ####? [How to programmatically send SMS on the iPhone?](http://stackoverflow.com/questions/10848/how-to-programmatically-send-sms-on-the-iphone)
+
+	iPhone上用官方API,programmatically发短信。没有标记成答案的回答。就目前回答来看，没答案。大都有MessageUI.Framework，用私有API，或者自己架设服务器等。
+
+19. [Passing Data between View Controllers](http://stackoverflow.com/questions/5210535/passing-data-between-view-controllers)
+
+	View Controllers之间的数据传递。最好的答案是采用delegate的方法，还有block、属性等。
+
+20. [iPhone app signing: A valid signing identity matching this profile could not be found in your keychain](http://stackoverflow.com/questions/999313/iphone-app-signing-a-valid-signing-identity-matching-this-profile-could-not-be)
+	
+	通过Organizer来完成。有些人也是莫名其妙就好了。我的经验是Xcode 5以前在Organizer对profile进行管理，基本上问题都能通过Orgainizer解决了。Xcode 5现在放在Preferences的Account管理。
+
+21. [How do I detect when someone shakes an iPhone?](http://stackoverflow.com/questions/150446/how-do-i-detect-when-someone-shakes-an-iphone)
+	
+	监测iPhone的摇晃手势。通过motionEnded获得event的subtype，判断subtype是否等于UIEventSubtypeMotionShake，[DEMO](https://github.com/yangmeyer/CPMotionRecognizer)。
+
+22. [Convert UTF-8 encoded NSData to NSString](http://stackoverflow.com/questions/2467844/convert-utf-8-encoded-nsdata-to-nsstring)
+
+	将UTF-8编码的NSData转为NSString。两种方法，1）NSString* newStr = [[NSString alloc] initWithData:theData encoding:NSUTF8StringEncoding];2）NSString* newStr = [NSString stringWithUTF8String:[theData bytes]]。回答很贴心，真赞。
+
+23. [Loaded nib but the view outlet was not set - new to InterfaceBuilder](http://stackoverflow.com/questions/4763519/loaded-nib-but-the-view-outlet-was-not-set-new-to-interfacebuilder)
+	
+	回答中主要是检查设置是否对了。
+
+24. [Applications are expected to have a root view controller at the end of application launch](http://stackoverflow.com/questions/7520971/applications-are-expected-to-have-a-root-view-controller-at-the-end-of-applicati)
+	
+	这问题经常是因为在没有设置self.window.rootViewController。但问题者已经设置了，他的问题是在main.m中没设置对delegate的名字，即retVal = UIApplicationMain(argc, argv, nil, @"AppDelegate");中最后一个参数。
+
+25. [How do I associate file types with an iPhone application?](http://stackoverflow.com/questions/2774343/how-do-i-associate-file-types-with-an-iphone-application)
+
+	支持自定义文件类型。Brad Larson介绍了他在[Molecules](http://www.sunsetlakesoftware.com/molecules)是如何做的，这款app已经开源。评论中还介绍了raywenderlich上关于这个主题的教程。其中类似的有自定义URL协议[iPhone file extension app association](http://stackoverflow.com/questions/1286615/iphone-file-extension-app-association)。
+
+26. [Send and receive messages through NSNotificationCenter in Objective-C? [closed]](http://stackoverflow.com/questions/2191594/send-and-receive-messages-through-nsnotificationcenter-in-objective-c)
+	
+	消息中心如何收发消息。基础的讲解。
+
+27. [Xcode 4 — see the number of the line of code I am on?](http://stackoverflow.com/questions/5901758/xcode-4-see-the-number-of-the-line-of-code-i-am-on)
+	
+	显示代码行数。基础讲解。
+
+28. [Best JSON library to use when developing an iPhone application? [closed]](http://stackoverflow.com/questions/286087/best-json-library-to-use-when-developing-an-iphone-application)
+
+	最好的JSON lib。链接的内容有些过时。推荐看下 唐巧的[不要使用SBJSON(json-framework)](http://blog.devtang.com/blog/2012/05/05/do-not-use-sbjson/)。
+
+29. [Creating a left-arrow button (like UINavigationBar's “back” style) on a UIToolbar](http://stackoverflow.com/questions/227078/creating-a-left-arrow-button-like-uinavigationbars-back-style-on-a-uitoolba)
+
+	在UIToolbar创建一个左箭头按钮。自定义一个UIView，或者用一个image来初始化UIBarButtonItem。
+
+30. [EXC_BAD_ACCESS signal received](http://stackoverflow.com/questions/327082/exc-bad-access-signal-received)
+	
+	出现EXC_BAD_ACCESS错误。这个问题往往是内存问题导致。采用回答中开启NSZombieEnabled，一般都能解决。你可以参考下[解决EXC_BAD_ACCESS错误的一种方法--NSZombieEnabled](http://blog.csdn.net/likendsl/article/details/7566305)。ARC下，很少会碰到这类问题了。
+
+31. [iPhone App Icons - Exact Radius?](http://stackoverflow.com/questions/2105289/iphone-app-icons-exact-radius)
+	
+	iPhone App Icons的准确半径。
+	
+32. [How dangerous is it to compare floating point values?](http://stackoverflow.com/questions/10334688/how-dangerous-is-it-to-compare-floating-point-values)
+
+	浮点型的比较。基础知识点。更多请看Mike Ash的[Friday Q&A 2011-01-04: Practical Floating Point](http://www.mikeash.com/pyblog/friday-qa-2011-01-04-practical-floating-point.html)。就我个人理解，在日常iOS开发中，所用到的数基本上都能被准确表示，你不用担心这个浮点数比较问题。不过如果你明显知道这个数不能准确表示，这时候你就需要做额外的工作。
+	
+33. [What kind of leaks does automatic reference counting in Objective-C not prevent or minimize?](http://stackoverflow.com/questions/6260256/what-kind-of-leaks-does-automatic-reference-counting-in-objective-c-not-prevent)	
+	在Objective-C中，哪些是ARC搞不定的。一般有两类: 一个是循环引用，另外一个是Core Foundation类型的对象。
+	
+34. [Multiple lines of text in UILabel](http://stackoverflow.com/questions/990221/multiple-lines-of-text-in-uilabel)		
+	UILabel的多行文本。考虑到不同版本的系统问题，iOS 6或者以上`textLabel.lineBreakMode = NSLineBreakByWordWrapping;
+textLabel.numberOfLines = 0;`iOS 6以下`textLabel.lineBreakMode = UILineBreakModeWordWrap;
+textLabel.numberOfLines = 0;`
+
+35. [How do you load custom UITableViewCells from Xib files?](http://stackoverflow.com/questions/540345/how-do-you-load-custom-uitableviewcells-from-xib-files)
+
+	从Xib文件载入自定义UITableViewCell。基础写法。
+
+
+36. [How to access SOAP services from iPhone](http://stackoverflow.com/questions/204465/how-to-access-soap-services-from-iphone)
+
+	iPhone访问SOAP服务。没有标注为接受的答案。可能是问题太早了，从我目前搜索到的来看(没实际操作过)，是有比较好的解决方法。
+	
+37. [This class is not key value coding-compliant for the key](http://stackoverflow.com/questions/3088059/this-class-is-not-key-value-coding-compliant-for-the-key)
+
+	提问者的粗心导致。也有代码书写不规范的问题。问题中UILabel的变量名为string，这会在运行时引起命名冲突。问题中的项目链接也已经失效。
+
+38. [Tips for a successful AppStore submission? [closed]](http://stackoverflow.com/questions/28551/tips-for-a-successful-appstore-submission)
+
+	新手第一次提交的忐忑心。
+
+39. [UITableViewCell, show delete button on swipe](http://stackoverflow.com/questions/3309484/uitableviewcell-show-delete-button-on-swipe)
+
+	在UITableViewCell用滑动手势展示删除按钮。基础代码。
+
+40. [Create singleton using GCD's dispatch_once in Objective C](http://stackoverflow.com/questions/5720029/create-singleton-using-gcds-dispatch-once-in-objective-c)
+
+	在Objective-C中，使用GCD的 dispatch_once 来创建单例，已经足够了。不同的书写，只是细节上不同。
+
+41. [Status bar and navigation bar appear over my view's bounds in iOS 7](http://stackoverflow.com/questions/17074365/status-bar-and-navigation-bar-appear-over-my-views-bounds-in-ios-7)
+
+	iOS 7中状态条和导航条的适配问题。讲的比较全面。
+	
+42. [Programmatically get own phone number in iOS](http://stackoverflow.com/questions/193182/programmatically-get-own-phone-number-in-ios)
+
+	出于安全原因，现在SDK不直接提供接口来获得手机号码。通过NSUserDefaults来获得也不可以。也有在2013年通过[iOS 私有API 获取手机号](http://xiaosblog.com/ios-%E7%A7%81%E6%9C%89api-%E8%8E%B7%E5%8F%96%E6%89%8B%E6%9C%BA%E5%8F%B7/)获取成功的。[iPhone开发应用程序，有办法获取手机的本机号码吗？如果是Android系统呢？](http://www.zhihu.com/question/19812896)，你可以了解到什么才是手机号码。
+
+43. [iPhone App Minus App Store?](http://stackoverflow.com/questions/37464/iphone-app-minus-app-store)
+
+	iPhone App不通过App Store分发。一种是通过企业证书来分发，另外一个是自签名App分发给越狱的机器。
+
+44. [Gradients on UIView and UILabels On iPhone [duplicate]](http://stackoverflow.com/questions/422066/gradients-on-uiview-and-uilabels-on-iphone)
+
+	在iPhone上实现渐变效果。一般有两种，一个是重载DrawRect，另外一个是使用CAGradientLayer。也有个比较trick和简单渐变的是，给定一个像素宽的图片，通过设置view属性来扩展图片以填满view。
+
+45. [How to write iOS app purely in C](http://stackoverflow.com/questions/10289890/how-to-write-ios-app-purely-in-c)
+
+	如何用纯C来书写代码。回答的展示了用纯C的代码，看了就知道为啥不用纯C写。
+
+46. [NSInvalidUnarchiveOperationException: Could not instantiate class named NSLayoutConstraint](http://stackoverflow.com/questions/13201586/nsinvalidunarchiveoperationexception-could-not-instantiate-class-named-nslayout)
+
+	iOS版本兼容问题导致。回答中的Gif做得最赞。
+
+47. [How does TestFlight do it?](http://stackoverflow.com/questions/4973244/how-does-testflight-do-it)
+
+	iOS App无线分发原理。通过企业证书来完成，回答中有很不错的学习链接，包括相关的开源工具实现等。Apple中文教程，[以无线方式安装应用程序](http://help.apple.com/iosdeployment-apps/mac/1.1/#app43ad871e)。
+
+48. [Xcode 4.2 - declaration of '…' will not be visible outside of this function warning](http://stackoverflow.com/questions/7765484/xcode-4-2-declaration-of-will-not-be-visible-outside-of-this-function-wa)
+
+	这个错误是因为Reachability.h的方法的参数中，声明了一个新的struct` sockaddr_in`，所以只需在Reachabilit.h中`#import <netinet/in.h>`。
+
+49. [How do I do base64 encoding on iphone-sdk?](http://stackoverflow.com/questions/392464/how-do-i-do-base64-encoding-on-iphone-sdk)
+
+	iOS SDK里没有直接的Base64编码实现。你可以查看回答中的链接和回答内容，借助别人的实现来完成。也可以查阅RFC中完整的Base64定义，自己来实现。
+
+50. [How to tell if UIViewController's view is visible](http://stackoverflow.com/questions/2777438/how-to-tell-if-uiviewcontrollers-view-is-visible)
+
+	判断UIViewController的view是否可见。一种是
+	`if (viewController.isViewLoaded && viewController.view.window) {
+    // viewController is visible
+	}`
+	其中isViewLoaded是判断view是否载入内存；window是否`nil` 表示view是否add到window上了，因为window在一般情况下也都是可见的。
+	另外一种情况是，通过UINavigationController管理viewcontroller，你可以直接检查 `visibleViewController` 属性。
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+ 
