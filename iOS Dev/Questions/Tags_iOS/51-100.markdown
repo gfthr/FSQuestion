@@ -140,3 +140,8 @@
 
 	挺多东西要检查。基本上是因为没include到相关的文件。
 
+87. [How do I vertically center UITextField Text?](http://stackoverflow.com/questions/5439099/how-do-i-vertically-center-uitextfield-text)
+
+	UITextField文字垂直居中。`textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;`
+
+88. []()
