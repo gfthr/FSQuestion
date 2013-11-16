@@ -151,3 +151,8 @@
 89. [iOS: how to perform an HTTP POST request?](http://stackoverflow.com/questions/5537297/ios-how-to-perform-an-http-post-request)
 
 	如何完成一个HTTP Post请求。介绍了使用`NSURLConnection`来完成。当然你也可以使用第三方库。
+
+90. [How can i change the color of pagination dots of UIPageControl?](http://stackoverflow.com/questions/2942636/how-can-i-change-the-color-of-pagination-dots-of-uipagecontrol)
+
+	改变UIPageControl的点颜色。iOS 6可以直接设置，也介绍了自定义UIView来完成。
+
