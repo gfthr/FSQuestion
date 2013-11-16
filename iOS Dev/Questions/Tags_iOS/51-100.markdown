@@ -136,4 +136,7 @@
 
 	如何对UIView应用一个正交投影。对layer的属性`CATransform3D`进行设置。
 
+86. [Undefined symbols for architecture armv7](http://stackoverflow.com/questions/6429494/undefined-symbols-for-architecture-armv7)
+
+	挺多东西要检查。基本上是因为没include到相关的文件。
 
