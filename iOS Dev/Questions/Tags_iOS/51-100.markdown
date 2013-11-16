@@ -147,3 +147,7 @@
 88. [iOS 5 Best Practice (Release/retain?)](http://stackoverflow.com/questions/6308425/ios-5-best-practice-release-retain)
 
 	MRC,ARC这些。基本的说法。
+
+89. [iOS: how to perform an HTTP POST request?](http://stackoverflow.com/questions/5537297/ios-how-to-perform-an-http-post-request)
+
+	如何完成一个HTTP Post请求。介绍了使用`NSURLConnection`来完成。当然你也可以使用第三方库。
