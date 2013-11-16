@@ -144,4 +144,6 @@
 
 	UITextField文字垂直居中。`textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;`
 
-88. []()
+88. [iOS 5 Best Practice (Release/retain?)](http://stackoverflow.com/questions/6308425/ios-5-best-practice-release-retain)
+
+	MRC,ARC这些。基本的说法。
