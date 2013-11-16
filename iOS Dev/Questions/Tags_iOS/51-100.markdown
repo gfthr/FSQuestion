@@ -132,4 +132,8 @@
 
 	设置UITableViewCell的height。`heightForRowAtIndexPath`
 
-85. 
+85. [How do I apply a perspective transform to a UIView?](http://stackoverflow.com/questions/347721/how-do-i-apply-a-perspective-transform-to-a-uiview)
+
+	如何对UIView应用一个正交投影。对layer的属性`CATransform3D`进行设置。
+
+
