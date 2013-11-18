@@ -156,3 +156,6 @@
 
 	改变UIPageControl的点颜色。iOS 6可以直接设置，也介绍了自定义UIView来完成。
 
+91. [Storing custom objects in an NSMutableArray in NSUserDefaults](http://stackoverflow.com/questions/537044/storing-custom-objects-in-an-nsmutablearray-in-nsuserdefaults)
+
+	在NSUserDefaults存任意类型的对象。用`NSKeyedUnarchiver`来完成。

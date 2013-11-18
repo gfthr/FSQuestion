@@ -130,7 +130,7 @@
 	浮点型的比较。基础知识点。更多请看Mike Ash的[Friday Q&A 2011-01-04: Practical Floating Point](http://www.mikeash.com/pyblog/friday-qa-2011-01-04-practical-floating-point.html)。就我个人理解，在日常iOS开发中，所用到的数基本上都能被准确表示，你不用担心这个浮点数比较问题。不过如果你明显知道这个数不能准确表示，这时候你就需要做额外的工作。
 	
 33. [What kind of leaks does automatic reference counting in Objective-C not prevent or minimize?](http://stackoverflow.com/questions/6260256/what-kind-of-leaks-does-automatic-reference-counting-in-objective-c-not-prevent)	
-	在Objective-C中，哪些是ARC搞不定的。一般有两类: 一个是循环引用，另外一个是Core Foundation类型的对象。
+	在Objective-C中，哪些是ARC搞不定的。一般有两类: 一个是循环引用，另外一个是Core Foundation类型的对象。类似的问题还有[How do I replace weak references when using ARC and targeting iOS 4.0?](http://stackoverflow.com/questions/6893038/how-do-i-replace-weak-references-when-using-arc-and-targeting-ios-4-0/6960420#6960420)。
 	
 34. [Multiple lines of text in UILabel](http://stackoverflow.com/questions/990221/multiple-lines-of-text-in-uilabel)		
 	UILabel的多行文本。考虑到不同版本的系统问题，iOS 6或者以上`textLabel.lineBreakMode = NSLineBreakByWordWrapping;
