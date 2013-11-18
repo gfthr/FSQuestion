@@ -159,3 +159,7 @@
 91. [Storing custom objects in an NSMutableArray in NSUserDefaults](http://stackoverflow.com/questions/537044/storing-custom-objects-in-an-nsmutablearray-in-nsuserdefaults)
 
 	在NSUserDefaults存任意类型的对象。用`NSKeyedUnarchiver`来完成。
+
+92. [How can I animate the movement of a view or image along a curved path?](http://stackoverflow.com/questions/1142727/how-can-i-animate-the-movement-of-a-view-or-image-along-a-curved-path)
+
+	view或者image沿着一条曲线的动画。主要是创建`CAKeyframeAnimation`和`CGPathCreateMutable`来完成。

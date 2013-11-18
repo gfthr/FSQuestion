@@ -1,0 +1,4 @@
+1. [Can u tell me what does the clang -cc1 option do?](http://stackoverflow.com/questions/8991662/can-u-tell-me-what-does-the-clang-cc1-option-do)
+ 
+  简单地说，`-ccl`表示使用Clang来compile，默认是GCC。
+  [-cc1](http://clang.llvm.org/get_started.html), [Compiler Drives](http://www.adac.co.jp/eng/support/ghs/ccvxx.pdf)
