@@ -23,7 +23,7 @@
 
 	Objective-C 中`delegate`的属性都是`assign`而不是`retain`。这是为了防止循环引用问题。
 	
-	在ARC中大都会用`weak`来替代`assign`(等同于`unsafe_unretained`，对象被销毁后成为野指针)，因为如果对象所指向的内存已经销毁了，那么所有指向这个对象的`weak`指针会自动置为`nil`。这样就不用去在`dealloc`中，设置`delegate`等于`nil`。这也是为什么会有人建议总要在`dealloc`中设置`delegate`为`nil`(因为会有人使用了`assign`或者`unsafe_unretained`)。关于[手把手教你ARC——iOS/Mac开发ARC入门和使用](http://onevcat.com/2012/06/arc-hand-by-hand/)、[ARC 学习](http://www.cnblogs.com/scorpiozj/archive/2011/10/24/2222609.html)。
+	在ARC中大都会用`weak`来替代`assign`(等同于`unsafe_unretained`，对象被销毁后成为野指针)，因为如果对象所指向的内存已经销毁了，那么所有指向这个对象的`weak`指针会自动置为`nil`。这样就不用去在`dealloc`中，设置`delegate`等于`nil`。这也是为什么会有人建议总要在`dealloc`中设置`delegate`为`nil`(因为会有人使用了`assign`或者`unsafe_unretained`)。关于[手把手教你ARC——iOS/Mac开发ARC入门和使用](http://onevcat.com/2012/06/arc-hand-by-hand/)、[ARC 学习](http://www.cnblogs.com/scorpiozj/archive/2011/10/24/2222609.html)。[ARC - The meaning of __unsafe_unretained?](http://stackoverflow.com/questions/8592289/arc-the-meaning-of-unsafe-unretained/8593731#8593731)
 
 58. [When to use NSInteger vs int?](http://stackoverflow.com/questions/4445173/when-to-use-nsinteger-vs-int)
 
@@ -90,7 +90,7 @@
 
 74. [UIImage: Resize, then Crop](http://stackoverflow.com/questions/603907/uiimage-resize-then-crop)
 
-	 UIImage:Resize, then Crop。计算好缩放后的大小和位置，然后应用drawInRect:(在指定rect，填充满)。
+	 UIImage:Resize, then Crop。计算好缩放后的大小和位置，然后应用drawInRect:(在指定rect，填充满)。类似的有：[What's the easiest way to resize/optimize an image size with the iPhone SDK?](http://stackoverflow.com/questions/612131/whats-the-easiest-way-to-resize-optimize-an-image-size-with-the-iphone-sdk)。
 
 75. [How to print Boolean flag in NSLog?](http://stackoverflow.com/questions/6358349/how-to-print-boolean-flag-in-nslog)
 
@@ -163,3 +163,7 @@
 92. [How can I animate the movement of a view or image along a curved path?](http://stackoverflow.com/questions/1142727/how-can-i-animate-the-movement-of-a-view-or-image-along-a-curved-path)
 
 	view或者image沿着一条曲线的动画。主要是创建`CAKeyframeAnimation`和`CGPathCreateMutable`来完成。
+
+93. [How can my iphone app detect its own version number?](http://stackoverflow.com/questions/458632/how-can-my-iphone-app-detect-its-own-version-number/458723#458723)
+
+	得到App的Version` [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];`。
