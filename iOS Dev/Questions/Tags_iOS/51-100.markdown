@@ -167,3 +167,8 @@
 93. [How can my iphone app detect its own version number?](http://stackoverflow.com/questions/458632/how-can-my-iphone-app-detect-its-own-version-number/458723#458723)
 
 	得到App的Version` [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];`。
+	
+	
+94. [KVO and ARC how to removeObserver](http://stackoverflow.com/questions/6959896/kvo-and-arc-how-to-removeobserver/6960224#6960224)
+
+	ARC情况下removeObserver。可以在`dealloc`中设置。
