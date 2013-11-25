@@ -172,3 +172,7 @@
 94. [KVO and ARC how to removeObserver](http://stackoverflow.com/questions/6959896/kvo-and-arc-how-to-removeobserver/6960224#6960224)
 
 	ARC情况下removeObserver。可以在`dealloc`中设置。
+
+95. [iOS 4 app crashes at startup on iOS 3.1.3: Symbol not found: __NSConcreteStackBlock](http://stackoverflow.com/questions/3313786/ios-4-app-crashes-at-startup-on-ios-3-1-3-symbol-not-found-nsconcretestackbl)
+
+	Block使用出错。
