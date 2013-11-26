@@ -176,3 +176,7 @@
 95. [iOS 4 app crashes at startup on iOS 3.1.3: Symbol not found: __NSConcreteStackBlock](http://stackoverflow.com/questions/3313786/ios-4-app-crashes-at-startup-on-ios-3-1-3-symbol-not-found-nsconcretestackbl)
 
 	Block使用出错。
+
+96. [Universal iPhone/iPad application debug compilation error for iPhone testing](http://stackoverflow.com/questions/2618889/universal-iphone-ipad-application-debug-compilation-error-for-iphone-testing)
+
+	兼容性测试。有些API只存在于iPad的SDK中，framework status选成Optional，并且在代码中判断是否支持该API。
