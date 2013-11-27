@@ -180,3 +180,7 @@
 96. [Universal iPhone/iPad application debug compilation error for iPhone testing](http://stackoverflow.com/questions/2618889/universal-iphone-ipad-application-debug-compilation-error-for-iphone-testing)
 
 	兼容性测试。有些API只存在于iPad的SDK中，framework status选成Optional，并且在代码中判断是否支持该API。
+	
+97. [Disabling implicit animations in -[CALayer setNeedsDisplayInRect:]](http://stackoverflow.com/questions/2244147/disabling-implicit-animations-in-calayer-setneedsdisplayinrect/2244734#2244734)
+
+	Disable layer的动画。通过设置layer的action完成。
