@@ -184,3 +184,7 @@
 97. [Disabling implicit animations in -[CALayer setNeedsDisplayInRect:]](http://stackoverflow.com/questions/2244147/disabling-implicit-animations-in-calayer-setneedsdisplayinrect/2244734#2244734)
 
 	Disable layer的动画。通过设置layer的action完成。
+	
+98. [iPhone CoreData: How can I track/observe all changes within a subgraph?](http://stackoverflow.com/questions/2463950/iphone-coredata-how-can-i-track-observe-all-changes-within-a-subgraph)
+
+	跟踪观察CoreData的变化。观察通知`NSManagedObjectContextObjectsDidChangeNotification`并携带`ManagedObjectContext`。
