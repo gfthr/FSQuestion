@@ -188,3 +188,7 @@
 98. [iPhone CoreData: How can I track/observe all changes within a subgraph?](http://stackoverflow.com/questions/2463950/iphone-coredata-how-can-i-track-observe-all-changes-within-a-subgraph)
 
 	跟踪观察CoreData的变化。观察通知`NSManagedObjectContextObjectsDidChangeNotification`并携带`ManagedObjectContext`。
+
+99. [Stack trace or more info on unhandled exception in Xcode/iPhone](http://stackoverflow.com/questions/1093999/stack-trace-or-more-info-on-unhandled-exception-in-xcode-iphone)
+
+	关于调试。常见的调试方法。
