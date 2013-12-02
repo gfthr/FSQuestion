@@ -192,3 +192,7 @@
 99. [Stack trace or more info on unhandled exception in Xcode/iPhone](http://stackoverflow.com/questions/1093999/stack-trace-or-more-info-on-unhandled-exception-in-xcode-iphone)
 
 	关于调试。常见的调试方法。
+	
+100. [Changing my CALayer's anchorPoint moves the view](http://stackoverflow.com/questions/1968017/changing-my-calayers-anchorpoint-moves-the-view)
+
+	CALayer中anchorPoint。介绍了anchorPoint和position的关系。
