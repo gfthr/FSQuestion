@@ -1,0 +1,3 @@
+101. [Will my iPhone app take a performance hit if I use Objective-C for low level code?](http://stackoverflow.com/questions/926728/will-my-iphone-app-take-a-performance-hit-if-i-use-objective-c-for-low-level-cod)
+
+	性能会高点，不过就目前Objective-C大都不会有性能瓶颈。
