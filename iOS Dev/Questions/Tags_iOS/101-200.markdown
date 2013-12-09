@@ -5,3 +5,7 @@
 102. [What are the differences between a UIView and a CALayer?](http://stackoverflow.com/questions/7826306/what-are-the-differences-between-a-uiview-and-a-calayer)
 
 	Layer相对UIView来说更薄一点。UIView内置了用户交互(touch这类)的支持，但Layer的话需要你自己写。Layer能做更复杂的动画。
+	
+103. [Force a WebView link to launch Safari?](http://stackoverflow.com/questions/2532453/force-a-webview-link-to-launch-safari)
+
+	使用openURL即可。
