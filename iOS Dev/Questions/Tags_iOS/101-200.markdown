@@ -13,3 +13,7 @@
 104. [Where can I find sample OpenGL ES 2.0 shaders that perform image processing tasks?](http://stackoverflow.com/questions/5830139/where-can-i-find-sample-opengl-es-2-0-shaders-that-perform-image-processing-task)
 
 	使用GPUImage框架。
+
+105. [Choose OpenGL ES 1.1 or OpenGL ES 2.0?](http://stackoverflow.com/questions/4784137/choose-opengl-es-1-1-or-opengl-es-2-0)
+
+	就目前设备来看，基本上可以不用考虑兼容性问题，就直接选择OpenGL ES 2.0。
