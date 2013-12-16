@@ -21,3 +21,7 @@
 106. [Are the Core Image filters in iOS 5.0 fast enough for realtime video processing?](http://stackoverflow.com/questions/6625888/are-the-core-image-filters-in-ios-5-0-fast-enough-for-realtime-video-processing)
 
 	CoreImage也在不停的优化，不过GPUImage应该更合适点。
+
+107. [Grand Central Dispatch (GCD) vs. performSelector - need a better explanation](http://stackoverflow.com/questions/5225130/grand-central-dispatch-gcd-vs-performselector-need-a-better-explanation/)
+
+	GCD和performSelector的区别。performSelectorOnMainThread不是用GCD来完成的，它是在当前线程的run loop上设置一个timer，timer根据mode来触发完成。并且不能在当前线程queue上执行，否则会导致死锁。@Brad觉得使用GCD更优雅点。
