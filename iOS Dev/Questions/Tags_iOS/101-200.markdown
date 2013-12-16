@@ -17,3 +17,7 @@
 105. [Choose OpenGL ES 1.1 or OpenGL ES 2.0?](http://stackoverflow.com/questions/4784137/choose-opengl-es-1-1-or-opengl-es-2-0)
 
 	就目前设备来看，基本上可以不用考虑兼容性问题，就直接选择OpenGL ES 2.0。
+	
+106. [Are the Core Image filters in iOS 5.0 fast enough for realtime video processing?](http://stackoverflow.com/questions/6625888/are-the-core-image-filters-in-ios-5-0-fast-enough-for-realtime-video-processing)
+
+	CoreImage也在不停的优化，不过GPUImage应该更合适点。
