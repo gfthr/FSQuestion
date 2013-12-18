@@ -20,7 +20,7 @@
 	
 106. [Are the Core Image filters in iOS 5.0 fast enough for realtime video processing?](http://stackoverflow.com/questions/6625888/are-the-core-image-filters-in-ios-5-0-fast-enough-for-realtime-video-processing)
 
-	CoreImage也在不停的优化，不过GPUImage应该更合适点。
+	CoreImage也在不停的优化，不过GPUImage应该更合适点。类似的还有[How to apply “filters” to AVCaptureVideoPreviewLayer](http://stackoverflow.com/questions/5156872/how-to-apply-filters-to-avcapturevideopreviewlayer/)。
 
 107. [Grand Central Dispatch (GCD) vs. performSelector - need a better explanation](http://stackoverflow.com/questions/5225130/grand-central-dispatch-gcd-vs-performselector-need-a-better-explanation/)
 
@@ -29,3 +29,7 @@
 108. [Use CoreData or SQLite on iPhone? [closed]](http://stackoverflow.com/questions/1318467/use-coredata-or-sqlite-on-iphone)
 
 	使用CoreData还是SQLite。大多数情况下还是使用CoreData来的简单、速度快，CoreData还提供了管理undo的功能。
+
+109. [Method Swizzle on iPhone device](http://stackoverflow.com/questions/1637604/method-swizzle-on-iphone-device)
+	
+	Method Swizzle。有两个地方可以参考，一个是[JRSwizzle](https://github.com/rentzsch/jrswizzle), 另外一个是CocoaDev wiki上的[Method Swizzling](http://web.archive.org/web/20100102121811/http://cocoadev.com/index.pl?MethodSwizzling)。
