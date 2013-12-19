@@ -33,3 +33,7 @@
 109. [Method Swizzle on iPhone device](http://stackoverflow.com/questions/1637604/method-swizzle-on-iphone-device)
 	
 	Method Swizzle。有两个地方可以参考，一个是[JRSwizzle](https://github.com/rentzsch/jrswizzle), 另外一个是CocoaDev wiki上的[Method Swizzling](http://web.archive.org/web/20100102121811/http://cocoadev.com/index.pl?MethodSwizzling)。
+
+110. [How can I encrypt CoreData contents on an iPhone](http://stackoverflow.com/questions/1645007/how-can-i-encrypt-coredata-contents-on-an-iphone)
+
+	如何加密CoreData内容。让属性变成 transformable properties。一般不会全加密，只加密个别的属性，性能上和没加密的差不多。
