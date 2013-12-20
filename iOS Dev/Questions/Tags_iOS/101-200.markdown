@@ -37,3 +37,7 @@
 110. [How can I encrypt CoreData contents on an iPhone](http://stackoverflow.com/questions/1645007/how-can-i-encrypt-coredata-contents-on-an-iphone)
 
 	如何加密CoreData内容。让属性变成 transformable properties。一般不会全加密，只加密个别的属性，性能上和没加密的差不多。
+
+111. [GCD to perform task in main thread](http://stackoverflow.com/questions/5662360/gcd-to-perform-task-in-main-thread)
+
+	怎么用GCD在主线程完成任务。直接使用`dispatch_async(dispatch_get_main_queue(), ^{// do work here});`即可。不用判断是否在主线程，效果是一样的。
