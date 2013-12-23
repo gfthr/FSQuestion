@@ -41,3 +41,7 @@
 111. [GCD to perform task in main thread](http://stackoverflow.com/questions/5662360/gcd-to-perform-task-in-main-thread)
 
 	怎么用GCD在主线程完成任务。直接使用`dispatch_async(dispatch_get_main_queue(), ^{// do work here});`即可。不用判断是否在主线程，效果是一样的。
+
+112. [Reg: modifying layer that is being finalized… [CALayer frame]: message sent to deallocated instance 0xe43c520v](http://stackoverflow.com/questions/4956413/reg-modifying-layer-that-is-being-finalized-calayer-frame-message-sen)
+
+	 modifying layer that is being finalized。这个问题是说在dealloc的时候，相关的layer被修改。导致这问题可能是因为你在UIView dealloc的时候，对相关属性进行修改。
