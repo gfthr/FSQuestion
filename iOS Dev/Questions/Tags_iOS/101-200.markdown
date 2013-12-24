@@ -45,3 +45,7 @@
 112. [Reg: modifying layer that is being finalized… [CALayer frame]: message sent to deallocated instance 0xe43c520v](http://stackoverflow.com/questions/4956413/reg-modifying-layer-that-is-being-finalized-calayer-frame-message-sen)
 
 	 modifying layer that is being finalized。这个问题是说在dealloc的时候，相关的layer被修改。导致这问题可能是因为你在UIView dealloc的时候，对相关属性进行修改。
+
+113. [How do you shrink a UIPickerView on the iPhone?](http://stackoverflow.com/questions/905969/how-do-you-shrink-a-uipickerview-on-the-iphone)
+
+	在iPhone上如何缩小一个`UIPickerView`。对于control而言，直接在其上做缩放会产生artifact。所以可以把其加在另外一个大小缩放过的view上来完成缩放。
