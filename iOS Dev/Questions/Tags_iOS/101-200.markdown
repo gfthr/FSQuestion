@@ -49,3 +49,7 @@
 113. [How do you shrink a UIPickerView on the iPhone?](http://stackoverflow.com/questions/905969/how-do-you-shrink-a-uipickerview-on-the-iphone)
 
 	在iPhone上如何缩小一个`UIPickerView`。对于control而言，直接在其上做缩放会产生artifact。所以可以把其加在另外一个大小缩放过的view上来完成缩放。
+
+114. [What are some great Quartz 2D drawing tutorials? [closed]](http://stackoverflow.com/questions/3463256/what-are-some-great-quartz-2d-drawing-tutorials)
+
+	Quartz 2D绘制的好教程。@brad推荐了自己的一些note，[iTunes U上的视频](http://deimos.apple.com/WebObjects/Core.woa/Browse/matcmadison.edu.3989485784.03989485786)，其相关的[笔记](http://www.sunsetlakesoftware.com/sites/default/files/Spring2010CourseNotes/quartz%202d%20drawing.html)、[程序](http://www.sunsetlakesoftware.com/sites/default/files/QuartzExamples.zip)，并推荐了官方教程[ Quartz 2D Programming Guide](https://developer.apple.com/library/mac/documentation/graphicsimaging/conceptual/drawingwithquartz2d/Introduction/Introduction.html)。
