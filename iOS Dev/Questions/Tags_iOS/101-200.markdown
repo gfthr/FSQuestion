@@ -57,3 +57,7 @@
 115. [Should I use NSDecimalNumber to deal with money?](http://stackoverflow.com/questions/421463/should-i-use-nsdecimalnumber-to-deal-with-money)
 	
 	是否应该用`NSDecimalNumber`来处理money。答案是肯定的。其中介绍了篇博客[COCOA TUTORIAL: DON’T BE LAZY WITH NSDECIMALNUMBER (LIKE ME)](http://www.cimgf.com/2008/04/23/cocoa-tutorial-dont-be-lazy-with-nsdecimalnumber-like-me/)。
+
+116. [How do remove the border around a core-plot graph](http://stackoverflow.com/questions/2194290/how-do-remove-the-border-around-a-core-plot-graph)
+
+	移除core-plot graph上的border。设置`graph.plotAreaFrame.borderLineStyle = nil;`。
