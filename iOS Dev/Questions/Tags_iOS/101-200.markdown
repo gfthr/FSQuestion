@@ -61,3 +61,7 @@
 116. [How do remove the border around a core-plot graph](http://stackoverflow.com/questions/2194290/how-do-remove-the-border-around-a-core-plot-graph)
 
 	移除core-plot graph上的border。设置`graph.plotAreaFrame.borderLineStyle = nil;`。
+
+117. [Quartz 2D drawRect method (iPhone)](http://stackoverflow.com/questions/716351/quartz-2d-drawrect-method-iphone)
+
+	Quartz 2D 上的drawRect方法。介绍了iPhone上drawRect。
