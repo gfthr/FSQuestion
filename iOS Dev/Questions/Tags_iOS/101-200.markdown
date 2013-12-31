@@ -61,3 +61,11 @@
 116. [How do remove the border around a core-plot graph](http://stackoverflow.com/questions/2194290/how-do-remove-the-border-around-a-core-plot-graph)
 
 	移除core-plot graph上的border。设置`graph.plotAreaFrame.borderLineStyle = nil;`。
+
+117. [Quartz 2D drawRect method (iPhone)](http://stackoverflow.com/questions/716351/quartz-2d-drawrect-method-iphone)
+
+	Quartz 2D 上的drawRect方法。介绍了iPhone上drawRect。
+
+118. [NSObject +load and +initialize - What do they do?](http://stackoverflow.com/questions/13326435/nsobject-load-and-initialize-what-do-they-do)
+
+	NSObject中+load, +initialize。+load在类对象载入到进程地址空间的时候马上调用。+initialize是lazy载入的，当调用其他(除load和initialize外)方法之前再调用。更多可看[Mike Ash's Friday Q&A](https://mikeash.com/pyblog/friday-qa-2009-05-22-objective-c-class-loading-and-initialization.html)。
