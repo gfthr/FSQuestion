@@ -36,7 +36,7 @@
 
 110. [How can I encrypt CoreData contents on an iPhone](http://stackoverflow.com/questions/1645007/how-can-i-encrypt-coredata-contents-on-an-iphone)
 
-	如何加密CoreData内容。让属性变成 transformable properties。一般不会全加密，只加密个别的属性，性能上和没加密的差不多。
+	如何加密CoreData内容。让属性变成 transformable properties。一般不会全加密，只加密个别的属性，性能上和没加密的差不多。类似的问题有[What can I do with an Transformable attribute type in Core Data on the iPhone?](http://stackoverflow.com/questions/3014498/what-can-i-do-with-an-transformable-attribute-type-in-core-data-on-the-iphone)，里面介绍了如何存储图片和加密的相关链接。
 
 111. [GCD to perform task in main thread](http://stackoverflow.com/questions/5662360/gcd-to-perform-task-in-main-thread)
 
@@ -69,3 +69,7 @@
 118. [NSObject +load and +initialize - What do they do?](http://stackoverflow.com/questions/13326435/nsobject-load-and-initialize-what-do-they-do)
 
 	NSObject中+load, +initialize。+load在类对象载入到进程地址空间的时候马上调用。+initialize是lazy载入的，当调用其他(除load和initialize外)方法之前再调用。更多可看[Mike Ash's Friday Q&A](https://mikeash.com/pyblog/friday-qa-2009-05-22-objective-c-class-loading-and-initialization.html)。
+
+119. [What's the difference between an Detail Disclosure Button and an Disclosure Indicator?](http://stackoverflow.com/questions/3078665/whats-the-difference-between-an-detail-disclosure-button-and-an-disclosure-indi)
+
+	Detail Disclosure按钮和Disclosure按钮的区别。Detail Disclosure是查看详细信息，Disclosure是展示下一个级别或者与之联系的内容。
