@@ -73,3 +73,7 @@
 119. [What's the difference between an Detail Disclosure Button and an Disclosure Indicator?](http://stackoverflow.com/questions/3078665/whats-the-difference-between-an-detail-disclosure-button-and-an-disclosure-indi)
 
 	Detail Disclosure按钮和Disclosure按钮的区别。Detail Disclosure是查看详细信息，Disclosure是展示下一个级别或者与之联系的内容。
+
+120. [How does undo/redo basically work on iPhone OS?](http://stackoverflow.com/questions/2449268/how-does-undo-redo-basically-work-on-iphone-os)
+
+	undo/redo的基本使用。
