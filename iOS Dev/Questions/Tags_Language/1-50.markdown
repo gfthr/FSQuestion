@@ -1,0 +1,7 @@
+1. [Do-While and if-else statements in C/C++ macros](http://stackoverflow.com/questions/154136/do-while-and-if-else-statements-in-c-c-macros)
+
+	C/C++宏中的`Do-While`和`if-else`。对宏处理的不同情况，解释的很详细。
+
+2. [What is the name of this operator: “-->”?](http://stackoverflow.com/questions/1642028/what-is-the-name-of-this-operator)
+
+	操作符"-->"的名字。`while(x --> 0)`这里的这个操作符是这样理解：`while( (x--) > 0)`。
