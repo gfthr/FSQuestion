@@ -5,3 +5,7 @@
 2. [What is the name of this operator: “-->”?](http://stackoverflow.com/questions/1642028/what-is-the-name-of-this-operator)
 
 	操作符"-->"的名字。`while(x --> 0)`这里的这个操作符是这样理解：`while( (x--) > 0)`。
+
+3. [Why doesn't GCC optimize a*a*a*a*a*a to (a*a*a)*(a*a*a)?](http://stackoverflow.com/questions/6430448/why-doesnt-gcc-optimize-aaaaaa-to-aaaaaa)
+	
+	为什么GCC不优化`a*a*a*a*a*a`为`(a*a*a)*(a*a*a)`。大多数编译器对浮点数计算的重新排序是很保守的，除非他们肯定结果是一样的，或者你告诉他们你不关系数值上的精确度。你可看[the -ffast-math option](http://gcc.gnu.org/onlinedocs/gcc-4.1.1/gcc/Optimize-Options.html#Optimize-Options)。
