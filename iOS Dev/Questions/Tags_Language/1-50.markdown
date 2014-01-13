@@ -9,3 +9,7 @@
 3. [Why doesn't GCC optimize a*a*a*a*a*a to (a*a*a)*(a*a*a)?](http://stackoverflow.com/questions/6430448/why-doesnt-gcc-optimize-aaaaaa-to-aaaaaa)
 	
 	为什么GCC不优化`a*a*a*a*a*a`为`(a*a*a)*(a*a*a)`。大多数编译器对浮点数计算的重新排序是很保守的，除非他们肯定结果是一样的，或者你告诉他们你不关系数值上的精确度。你可看[the -ffast-math option](http://gcc.gnu.org/onlinedocs/gcc-4.1.1/gcc/Optimize-Options.html#Optimize-Options)。
+	
+4. [http://stackoverflow.com/questions/9229601/what-is-in-c-code](http://stackoverflow.com/questions/9229601/what-is-in-c-code)
+
+	C代码中`:-!!`是什么意思，`#define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))`，`#define BUILD_BUG_ON_NULL(e) ((void *)sizeof(struct { int:-!!(e); }))` 是什么意思。其中[bitfield 位段](http://zh.wikipedia.org/wiki/%E4%BD%8D%E6%AE%B5)。这里，宏的意思是检查表达式e的值是不是0，不是0的话，在build的时候fail。sizeof 求 负的宽度的时候会抱编译错误。
