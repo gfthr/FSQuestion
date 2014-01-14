@@ -13,3 +13,7 @@
 4. [http://stackoverflow.com/questions/9229601/what-is-in-c-code](http://stackoverflow.com/questions/9229601/what-is-in-c-code)
 
 	C代码中`:-!!`是什么意思，`#define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))`，`#define BUILD_BUG_ON_NULL(e) ((void *)sizeof(struct { int:-!!(e); }))` 是什么意思。其中[bitfield 位段](http://zh.wikipedia.org/wiki/%E4%BD%8D%E6%AE%B5)。这里，宏的意思是检查表达式e的值是不是0，不是0的话，在build的时候fail。sizeof 求 负的宽度的时候会抱编译错误。
+	
+5. [What is a typedef enum in Objective-C?](http://stackoverflow.com/questions/707512/what-is-a-typedef-enum-in-objective-c)
+
+	Objective-C的枚举。详细描述了枚举写法的来龙去脉。[C语言详解－枚举类型](http://www.cnblogs.com/JCSU/articles/1299051.html)。
