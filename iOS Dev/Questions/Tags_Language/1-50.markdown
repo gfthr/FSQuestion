@@ -8,7 +8,7 @@
 
 3. [Why doesn't GCC optimize a*a*a*a*a*a to (a*a*a)*(a*a*a)?](http://stackoverflow.com/questions/6430448/why-doesnt-gcc-optimize-aaaaaa-to-aaaaaa)
 	
-	为什么GCC不优化`a*a*a*a*a*a`为`(a*a*a)*(a*a*a)`。大多数编译器对浮点数计算的重新排序是很保守的，除非他们肯定结果是一样的，或者你告诉他们你不关系数值上的精确度。你可看[the -ffast-math option](http://gcc.gnu.org/onlinedocs/gcc-4.1.1/gcc/Optimize-Options.html#Optimize-Options)。
+	为什么GCC不优化`a*a*a*a*a*a`为`(a*a*a)*(a*a*a)`。大多数编译器对浮点数计算的重新排序是很保守的，除非他们肯定结果是一样的，或者你告诉他们你不关心数值上的精确度。你可看[the -ffast-math option](http://gcc.gnu.org/onlinedocs/gcc-4.1.1/gcc/Optimize-Options.html#Optimize-Options)。
 	
 4. [http://stackoverflow.com/questions/9229601/what-is-in-c-code](http://stackoverflow.com/questions/9229601/what-is-in-c-code)
 
@@ -17,3 +17,7 @@
 5. [What is a typedef enum in Objective-C?](http://stackoverflow.com/questions/707512/what-is-a-typedef-enum-in-objective-c)
 
 	Objective-C的枚举。详细描述了枚举写法的来龙去脉。[C语言详解－枚举类型](http://www.cnblogs.com/JCSU/articles/1299051.html)。
+
+6. [With C arrays, why is it the case that a[5] == 5[a] ?](http://stackoverflow.com/questions/381542/with-c-arrays-why-is-it-the-case-that-a5-5a)
+
+	在C数组中，为什么`a[5] == 5[a]`? C标准定义了`[]`:`a[b] == *(a + b)`。因此`a[5] = *(a + 5)`，`5[a] = *(5 + a)`。但相反的却是不行，`[a]5`和`[5]a`，会导致语法错误，反向操作符(dereference operator)应放置在地址前，而不是地址后面。
