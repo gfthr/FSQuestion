@@ -21,3 +21,7 @@
 6. [With C arrays, why is it the case that a[5] == 5[a] ?](http://stackoverflow.com/questions/381542/with-c-arrays-why-is-it-the-case-that-a5-5a)
 
 	在C数组中，为什么`a[5] == 5[a]`? C标准定义了`[]`:`a[b] == *(a + b)`。因此`a[5] = *(a + 5)`，`5[a] = *(5 + a)`。但相反的却是不行，`[a]5`和`[5]a`，会导致语法错误，反向操作符(dereference operator)应放置在地址前，而不是地址后面。
+	
+7. [How do you set, clear and toggle a single bit in C/C++?](http://stackoverflow.com/questions/47981/how-do-you-set-clear-and-toggle-a-single-bit-in-c-c)
+
+	如何设置、清除、开关某位。基本操作，简单明了。
