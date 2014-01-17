@@ -25,3 +25,7 @@
 7. [How do you set, clear and toggle a single bit in C/C++?](http://stackoverflow.com/questions/47981/how-do-you-set-clear-and-toggle-a-single-bit-in-c-c)
 
 	如何设置、清除、开关某位。基本操作，简单明了。
+
+8. [Why does the C preprocessor interpret the word “linux” as the constant “1”?](http://stackoverflow.com/questions/19210935/why-does-the-c-preprocessor-interpret-the-word-linux-as-the-constant-1)
+
+	为什么C预处理器将`linux`翻译成常量`1`。他并不是在头文件定义的，而是编译器自己设置的。等等这些来龙去脉。
