@@ -29,3 +29,7 @@
 8. [Why does the C preprocessor interpret the word “linux” as the constant “1”?](http://stackoverflow.com/questions/19210935/why-does-the-c-preprocessor-interpret-the-word-linux-as-the-constant-1)
 
 	为什么C预处理器将`linux`翻译成常量`1`。他并不是在头文件定义的，而是编译器自己设置的。等等这些来龙去脉。
+
+9. [Divide a number by 3 without using *, /, +, -, % operators](http://stackoverflow.com/questions/11694546/divide-a-number-by-3-without-using-operators)
+
+	number不用`*、/、+、-、%`操作符来被3除。用位操作来完成。
