@@ -36,4 +36,8 @@
 
 10. [Do I cast the result of malloc?](http://stackoverflow.com/questions/605845/do-i-cast-the-result-of-malloc)
 
-	malloc前加返回类型。不要加返回类型。有不少原因，如隐藏了错误、没必要等等。
+	强制类型转换malloc。不要加返回类型。有不少原因，如隐藏了错误、没必要等等。
+
+11. [The Definitive C Book Guide and List](http://stackoverflow.com/questions/562303/the-definitive-c-book-guide-and-list)
+
+	C书籍列表。[C++书籍列表](http://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list)。
