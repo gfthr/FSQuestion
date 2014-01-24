@@ -41,3 +41,7 @@
 11. [The Definitive C Book Guide and List](http://stackoverflow.com/questions/562303/the-definitive-c-book-guide-and-list)
 
 	C书籍列表。[C++书籍列表](http://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list)。
+
+12. [What does the C ??!??! operator do?](http://stackoverflow.com/questions/7825055/what-does-the-c-operator-do)
+
+	`!ErrorHasOccured() ??!??! HandleError();`中`??!`是什么意思。`??!`=`|`。`??!`是[trigraph](http://en.wikipedia.org/wiki/Digraphs_and_trigraphs#C)三连字。传说是为了照顾老一辈键盘上没有像`|`这样的字符才出现的。
