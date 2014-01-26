@@ -45,3 +45,7 @@
 12. [What does the C ??!??! operator do?](http://stackoverflow.com/questions/7825055/what-does-the-c-operator-do)
 
 	`!ErrorHasOccured() ??!??! HandleError();`中`??!`是什么意思。`??!`=`|`。`??!`是[trigraph](http://en.wikipedia.org/wiki/Digraphs_and_trigraphs#C)三连字。传说是为了照顾老一辈键盘上没有像`|`这样的字符才出现的。
+
+13. [Undefined Behavior and Sequence Points](http://stackoverflow.com/questions/4176328/undefined-behavior-and-sequence-points)
+
+	Undefined Behavior and Sequence Points,未定义行为和序列点。描述了未定义行为，副作用(side effect)，和序列点，这几个概念。你还可以参考[C语言 side effect 和 sequence point](http://19880512.blog.51cto.com/936364/283520)、[未定义行为](http://zh.wikipedia.org/wiki/%E6%9C%AA%E5%AE%9A%E4%B9%89%E8%A1%8C%E4%B8%BA)、[深入解析序列点](http://blog.csdn.net/huiguixian/article/details/6438613)和[What Every C Programmer Should Know About Undefined Behavior](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html)。
