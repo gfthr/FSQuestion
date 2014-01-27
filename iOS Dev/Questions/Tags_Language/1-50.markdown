@@ -49,3 +49,7 @@
 13. [Undefined Behavior and Sequence Points](http://stackoverflow.com/questions/4176328/undefined-behavior-and-sequence-points)
 
 	Undefined Behavior and Sequence Points,未定义行为和序列点。描述了未定义行为，副作用(side effect)，和序列点，这几个概念。你还可以参考[C语言 side effect 和 sequence point](http://19880512.blog.51cto.com/936364/283520)、[未定义行为](http://zh.wikipedia.org/wiki/%E6%9C%AA%E5%AE%9A%E4%B9%89%E8%A1%8C%E4%B8%BA)、[深入解析序列点](http://blog.csdn.net/huiguixian/article/details/6438613)和[What Every C Programmer Should Know About Undefined Behavior](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html)。
+
+14. [Can code that is valid in both C and C++ produce different behavior when compiled in each language?](http://stackoverflow.com/questions/12887700/can-code-that-is-valid-in-both-c-and-c-produce-different-behavior-when-compile)
+
+	C和C++。参看[Incompatibilities Between ISO C and ISO C++](http://david.tribble.com/text/cdiffs.htm)。
