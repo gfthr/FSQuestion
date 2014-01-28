@@ -53,3 +53,7 @@
 14. [Can code that is valid in both C and C++ produce different behavior when compiled in each language?](http://stackoverflow.com/questions/12887700/can-code-that-is-valid-in-both-c-and-c-produce-different-behavior-when-compile)
 
 	C和C++。参看[Incompatibilities Between ISO C and ISO C++](http://david.tribble.com/text/cdiffs.htm)。
+
+15. [What is the difference between #include <filename> and #include “filename”?](http://stackoverflow.com/questions/21593/what-is-the-difference-between-include-filename-and-include-filename)
+
+	`#include <filename>`和`#include "filename"`区别。可以参考[The #include Directive](http://gcc.gnu.org/onlinedocs/gcc-2.95.3/cpp_1.html#SEC6)。`#include <filename>`搜索你指定的和系统目录标准列表。`#include "filename"`是自己程序的头文件。
