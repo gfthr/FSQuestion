@@ -57,3 +57,7 @@
 15. [What is the difference between #include <filename> and #include “filename”?](http://stackoverflow.com/questions/21593/what-is-the-difference-between-include-filename-and-include-filename)
 
 	`#include <filename>`和`#include "filename"`区别。可以参考[The #include Directive](http://gcc.gnu.org/onlinedocs/gcc-2.95.3/cpp_1.html#SEC6)。`#include <filename>`搜索你指定的和系统目录标准列表。`#include "filename"`是自己程序的头文件。
+
+16. [Why does sizeof(x++) not increment x?](http://stackoverflow.com/questions/8225776/why-does-sizeofx-not-increment-x)
+
+	为什么`sizeof(x++)`中，x值没有增加。根据[C99标准](http://www.open-std.org/JTC1/sc22/wg14/www/docs/n1256.pdf)，如果`sizeof`中的运算元是可变长度数组类型的，那么运算元会执行；否是是不会执行的。
