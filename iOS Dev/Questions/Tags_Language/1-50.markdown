@@ -61,3 +61,7 @@
 16. [Why does sizeof(x++) not increment x?](http://stackoverflow.com/questions/8225776/why-does-sizeofx-not-increment-x)
 
 	为什么`sizeof(x++)`中，x值没有增加。根据[C99标准](http://www.open-std.org/JTC1/sc22/wg14/www/docs/n1256.pdf)，如果`sizeof`中的运算元是可变长度数组类型的，那么运算元会执行；否是是不会执行的。
+
+17. [Why does a function with no parameters (compared to the actual function definition) compile?](http://stackoverflow.com/questions/13950642/why-does-a-function-with-no-parameters-compared-to-the-actual-function-definiti)
+
+	为什么一个函数定义的时候没有参数，而实际实现的时候有参数。
