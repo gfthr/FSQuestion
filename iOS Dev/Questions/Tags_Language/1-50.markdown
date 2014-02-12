@@ -65,3 +65,7 @@
 17. [Why does a function with no parameters (compared to the actual function definition) compile?](http://stackoverflow.com/questions/13950642/why-does-a-function-with-no-parameters-compared-to-the-actual-function-definiti)
 
 	为什么一个函数定义的时候没有参数，而实际实现的时候有参数。
+
+18. [Which is better option to use for dividing an integer number by 2?](http://stackoverflow.com/questions/10681375/which-is-better-option-to-use-for-dividing-an-integer-number-by-2)
+
+	被2除，那个方法更好。有两个方法，要是你将数字当成比特位，那么位移；要是当成数值，那么除法。并且两者的结果并不尽相同。
