@@ -69,3 +69,7 @@
 18. [Which is better option to use for dividing an integer number by 2?](http://stackoverflow.com/questions/10681375/which-is-better-option-to-use-for-dividing-an-integer-number-by-2)
 
 	被2除，那个方法更好。有两个方法，要是你将数字当成比特位，那么位移；要是当成数值，那么除法。并且两者的结果并不尽相同。
+
+19. [In C++ source, what is the effect of extern “C”?](http://stackoverflow.com/questions/1041866/in-c-source-what-is-the-effect-of-extern-c)
+
+	在C++中，extern "C"的效果。还可以参看[C和C++函数的相互引用 extern "c"深入理解](http://elisawell.blog.163.com/blog/static/17146288120123204577218/),[extern用法详解(转)](http://www.cnblogs.com/luliang/archive/2008/08/21/1272746.html)。
