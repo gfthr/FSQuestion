@@ -73,3 +73,7 @@
 19. [In C++ source, what is the effect of extern “C”?](http://stackoverflow.com/questions/1041866/in-c-source-what-is-the-effect-of-extern-c)
 
 	在C++中，extern "C"的效果。还可以参看[C和C++函数的相互引用 extern "c"深入理解](http://elisawell.blog.163.com/blog/static/17146288120123204577218/),[extern用法详解(转)](http://www.cnblogs.com/luliang/archive/2008/08/21/1272746.html)。
+
+20. [Unit Testing C Code](http://stackoverflow.com/questions/65820/unit-testing-c-code)
+
+	C代码的单元测试。相关框架有[Check](http://check.sourceforge.net/)，[C框架列表](http://check.sourceforge.net/doc/check_html/check_2.html#SEC3)。
