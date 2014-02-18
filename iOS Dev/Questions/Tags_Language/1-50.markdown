@@ -77,3 +77,7 @@
 20. [Unit Testing C Code](http://stackoverflow.com/questions/65820/unit-testing-c-code)
 
 	C代码的单元测试。相关框架有[Check](http://check.sourceforge.net/)，[C框架列表](http://check.sourceforge.net/doc/check_html/check_2.html#SEC3)。
+
+21. [How to initialize an array in C](http://stackoverflow.com/questions/201101/how-to-initialize-an-array-in-c)
+
+	如何初始化C中的数组。
