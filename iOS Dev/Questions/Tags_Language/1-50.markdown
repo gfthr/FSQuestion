@@ -81,3 +81,7 @@
 21. [How to initialize an array in C](http://stackoverflow.com/questions/201101/how-to-initialize-an-array-in-c)
 
 	如何初始化C中的数组。
+
+22. [Where do I find the current C or C++ standard documents?](http://stackoverflow.com/questions/81656/where-do-i-find-the-current-c-or-c-standard-documents)
+
+	当前C或者C++标准文档。
