@@ -85,3 +85,7 @@
 22. [Where do I find the current C or C++ standard documents?](http://stackoverflow.com/questions/81656/where-do-i-find-the-current-c-or-c-standard-documents)
 
 	当前C或者C++标准文档。
+
+23. [Why can't variables be declared in a switch statement?](http://stackoverflow.com/questions/92396/why-cant-variables-be-declared-in-a-switch-statement)
+
+	为什么不能在switch 语句中声明变量。这是因为switch的case相当于goto，每个statement相当于label，作用域是整个switch，所以你需要用{}来限制变量的作用域后才能使用。详细可看[在switch-case中定义变量时当心被“穿越”](http://blog.csdn.net/tonywearme/article/details/7075809)
