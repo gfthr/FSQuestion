@@ -89,3 +89,7 @@
 23. [Why can't variables be declared in a switch statement?](http://stackoverflow.com/questions/92396/why-cant-variables-be-declared-in-a-switch-statement)
 
 	为什么不能在switch 语句中声明变量。这是因为switch的case相当于goto，每个statement相当于label，作用域是整个switch，所以你需要用{}来限制变量的作用域后才能使用。详细可看[在switch-case中定义变量时当心被“穿越”](http://blog.csdn.net/tonywearme/article/details/7075809)
+
+24. [What is the strict aliasing rule?](http://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule)
+
+	什么是strict aliasing rule。你还可以参看[GCC strict aliasing](http://www.dutor.net/index.php/2012/07/gcc-strict-aliasing/)。
