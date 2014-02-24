@@ -93,3 +93,7 @@
 24. [What is the strict aliasing rule?](http://stackoverflow.com/questions/98650/what-is-the-strict-aliasing-rule)
 
 	什么是strict aliasing rule。你还可以参看[GCC strict aliasing](http://www.dutor.net/index.php/2012/07/gcc-strict-aliasing/)。
+
+25. [What's the purpose of using { … } for a single line?](http://stackoverflow.com/questions/12193170/whats-the-purpose-of-using-for-a-single-line)
+
+	为单行使用{...}。介绍了些代码规范。
