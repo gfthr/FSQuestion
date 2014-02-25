@@ -97,3 +97,7 @@
 25. [What's the purpose of using { … } for a single line?](http://stackoverflow.com/questions/12193170/whats-the-purpose-of-using-for-a-single-line)
 
 	为单行使用{...}。介绍了些代码规范。
+
+26. [What is the difference between a definition and a declaration?](http://stackoverflow.com/questions/1410563/what-is-the-difference-between-a-definition-and-a-declaration)
+
+	定义(definition)和声明(declaration)的区别。
