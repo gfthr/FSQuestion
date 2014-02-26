@@ -101,3 +101,7 @@
 26. [What is the difference between a definition and a declaration?](http://stackoverflow.com/questions/1410563/what-is-the-difference-between-a-definition-and-a-declaration)
 
 	定义(definition)和声明(declaration)的区别。
+
+27. [How do I share a variable between source files in C? With `extern`, but how?](http://stackoverflow.com/questions/1433204/how-do-i-share-a-variable-between-source-files-in-c-with-extern-but-how)
+	
+	在源文件，如何共享变量，如用`extern`。
