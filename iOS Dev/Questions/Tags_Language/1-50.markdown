@@ -105,3 +105,7 @@
 27. [How do I share a variable between source files in C? With `extern`, but how?](http://stackoverflow.com/questions/1433204/how-do-i-share-a-variable-between-source-files-in-c-with-extern-but-how)
 	
 	在源文件，如何共享变量，如用`extern`。
+
+28. [Concept behind these four lines of tricky C++ code](http://stackoverflow.com/questions/17992553/concept-behind-these-four-lines-of-tricky-c-code)
+
+	这四行C++代码的含义。打印出"C++Sucks"，或者"skcuS++C"。
