@@ -48,7 +48,7 @@
 
 13. [Undefined Behavior and Sequence Points](http://stackoverflow.com/questions/4176328/undefined-behavior-and-sequence-points)
 
-	Undefined Behavior and Sequence Points,未定义行为和序列点。描述了未定义行为，副作用(side effect)，和序列点，这几个概念。你还可以参考[C语言 side effect 和 sequence point](http://19880512.blog.51cto.com/936364/283520)、[未定义行为](http://zh.wikipedia.org/wiki/%E6%9C%AA%E5%AE%9A%E4%B9%89%E8%A1%8C%E4%B8%BA)、[深入解析序列点](http://blog.csdn.net/huiguixian/article/details/6438613)和[What Every C Programmer Should Know About Undefined Behavior](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html)。
+	Undefined Behavior and Sequence Points,未定义行为和序列点。描述了未定义行为，副作用(side effect)，和序列点，这几个概念。你还可以参考[C语言 side effect 和 sequence point](http://19880512.blog.51cto.com/936364/283520)、[未定义行为](http://zh.wikipedia.org/wiki/%E6%9C%AA%E5%AE%9A%E4%B9%89%E8%A1%8C%E4%B8%BA)、[深入解析序列点](http://blog.csdn.net/huiguixian/article/details/6438613)和[What Every C Programmer Should Know About Undefined Behavior](http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html)。类似的例子有[Why are these constructs undefined behavior?](http://stackoverflow.com/questions/949433/why-are-these-constructs-undefined-behavior)。
 
 14. [Can code that is valid in both C and C++ produce different behavior when compiled in each language?](http://stackoverflow.com/questions/12887700/can-code-that-is-valid-in-both-c-and-c-produce-different-behavior-when-compile)
 
@@ -108,4 +108,8 @@
 
 28. [Concept behind these four lines of tricky C++ code](http://stackoverflow.com/questions/17992553/concept-behind-these-four-lines-of-tricky-c-code)
 
-	这四行C++代码的含义。打印出"C++Sucks"，或者"skcuS++C"。
+	这四行C++代码的含义。打印出"C++Sucks"，或者"skcuS++C"。很tricky。
+
+29. [How can I disable ARC for a single file in a project?](http://stackoverflow.com/questions/6646052/how-can-i-disable-arc-for-a-single-file-in-a-project)
+
+	如何为单个文件禁用ARC。设置  Compiler Flags 为`-fno-objc-arc`。
